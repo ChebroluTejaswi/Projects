@@ -1,0 +1,73 @@
+/* ----------------------NAVBAR------------------ */
+.navbar-dark{
+    background-color: white;
+}
+.navbar{
+    box-shadow: 0px 3px 10px rgba(124, 124, 124, 0.384);
+}
+.heading{
+    font-size: 1.8em;
+    color:#355C7D;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.heading button{
+    background-color: transparent;
+    border: none;
+    margin-left: 10px;
+    color:#355C7D;
+}
+.heading button:hover{
+    color:#39A2DB;
+}
+.container{
+    width:70% !important;
+    margin:70 auto;
+    padding: 0 !important;
+}
+span a{
+    text-decoration: none;
+    color:#355C7D;
+    margin-right: 20px;
+}
+@media only screen and (max-width: 600px) {
+	.heading{
+        font-size: 1.2em;
+    }
+}
+
+/* ----------------------Main box------------------ */
+.main-box{
+    margin-top: 60px;
+}
+
+/* ----------------------FOOTER------------------ */
+.footer {
+	bottom: 0;
+	width: 100%;
+	background-color: #769FCD;
+}
+.footer a,.footer p {
+	text-decoration: none;
+    margin-bottom: 20px;
+    margin-top: 10px;
+	font-size: 1em;
+    color: #fff;
+}
+.footer-items{
+    width:70%;
+    margin: 0 auto;
+    padding: 0;
+}
+.copyright b{
+    float:right;
+}
+
+/* footer design for mobile phones */
+@media only screen and (max-width: 765px) {
+    .footer a,.footer p {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 1em;
+    }
+}
