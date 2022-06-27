@@ -1,73 +1,173 @@
+/* Colors Used 
+#ffacac -peach
+#FFF89A -yellow
+#EEEEEE -grey
+#769FCD -light blue
+#355C7D -dark blue
+*/
 /* ----------------------NAVBAR------------------ */
-.navbar-dark{
-    background-color: white;
+.navbar-light {
+  background-color: white;
 }
-.navbar{
-    box-shadow: 0px 3px 10px rgba(124, 124, 124, 0.384);
+span.navbar-toggler-icon {
+  color: black;
 }
-.heading{
-    font-size: 1.8em;
-    color:#355C7D;
-    font-weight: bold;
-    margin-bottom: 0;
+.navbar {
+  box-shadow: 0px 3px 10px rgba(124, 124, 124, 0.384);
 }
-.heading button{
-    background-color: transparent;
-    border: none;
-    margin-left: 10px;
-    color:#355C7D;
+.heading {
+  font-size: 1.8em;
+  color: #355c7d;
+  font-weight: bold;
+  margin-bottom: 0;
 }
-.heading button:hover{
-    color:#39A2DB;
+.heading button {
+  background-color: transparent;
+  border: none;
+  margin-left: 10px;
+  color: #355c7d;
 }
-.container{
-    width:70% !important;
-    margin:70 auto;
-    padding: 0 !important;
+.heading button:hover {
+  color: #39a2db;
 }
-span a{
-    text-decoration: none;
-    color:#355C7D;
-    margin-right: 20px;
+.container {
+  width: 70% !important;
+  margin: 70 auto;
+  padding: 0 !important;
+}
+h1 a {
+  text-decoration: none;
+  color: #355c7d;
+}
+span a {
+  text-decoration: none;
+  color: #355c7d;
+  margin-right: 20px;
+}
+.navbar-collapse {
+  display: flex;
+  flex-direction: row-reverse;
 }
 @media only screen and (max-width: 600px) {
-	.heading{
-        font-size: 1.2em;
-    }
+  .heading {
+    font-size: 1.2em;
+  }
 }
 
 /* ----------------------Main box------------------ */
-.main-box{
-    margin-top: 60px;
+.main-box {
+  margin-top: 60px;
 }
 
 /* ----------------------FOOTER------------------ */
 .footer {
-	bottom: 0;
-	width: 100%;
-	background-color: #769FCD;
+  bottom: 0;
+  width: 100%;
+  background-color: #769fcd;
+  margin-top: 30px;
 }
-.footer a,.footer p {
-	text-decoration: none;
-    margin-bottom: 20px;
-    margin-top: 10px;
-	font-size: 1em;
-    color: #fff;
+.footer-items a,
+.footer-items p {
+  text-decoration: none;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  font-size: 1em;
+  color: #fff;
 }
-.footer-items{
-    width:70%;
-    margin: 0 auto;
-    padding: 0;
+.footer-items {
+  width: 70%;
+  margin: 0 auto;
+  padding: 0;
 }
-.copyright b{
-    float:right;
+.copyright b {
+  float: right;
 }
 
 /* footer design for mobile phones */
 @media only screen and (max-width: 765px) {
-    .footer a,.footer p {
-        margin-top: 5px;
-        margin-bottom: 5px;
-        font-size: 1em;
-    }
+  .footer-items a,
+  .footer-items p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 1em;
+  }
+}
+
+/* --------------- project tabs ---------------------------- */
+.pro-tab h4 {
+  padding: 1em 0;
+}
+.pro-tab {
+  background-image: linear-gradient(to bottom left, #ffffff, #c3ecff);
+  border-radius: 0.5em;
+  color: #355c7d;
+  margin: 1em auto;
+}
+.pro a {
+  text-decoration: none;
+}
+/* -------------Certificate section---------- */
+.certificate {
+  margin-bottom: 3em;
+}
+.certificate h2 {
+  text-align: center;
+  color: #355c7d;
+  font-size: 2em;
+  margin: 2em auto;
+}
+.achieve_certi,
+.online_certi {
+  width: 80%;
+  height: 80%;
+}
+.online_certi{
+  float: right;
+}
+.certificate-row a{
+  text-decoration: none;
+  color:#355c7d;
+}
+
+@media only screen and (max-width: 765px) {
+  .online_certi,
+  .achieve_certi {
+    display: none;
+  }
+}
+
+/* ----------------------Project- Card -------------------- */
+.pro {
+  box-shadow: 2px 2px 10px rgba(130, 130, 130, 0.299);
+  border-radius: 0.5em;
+}
+.project-list {
+  margin-top: 90px !important;
+  margin-bottom: 90px;
+}
+/* image */
+.project-list img {
+  width: 100%;
+  border-radius: 0.5em 0.5em 0 0;
+}
+.project-list .pro-img-box {
+  position: relative;
+}
+.project-list .pro-img-box :hover {
+  opacity: 0.7;
+}
+/* description */
+.pro-title {
+  color: #355c7d;
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  font-size: 1em;
+}
+.project-list .details {
+  color: #769fcd;
+  font-size: 1em;
+  word-wrap: normal;
+  text-align: justify;
+  margin: 1em;
 }
