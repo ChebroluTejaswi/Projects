@@ -1,9 +1,47 @@
 <%- include("partials/header") -%>
 
-<div class="container">
-    <div class="main-box">
-        
+    <div class="container">
+        <div class="main-box">
+            <div class="project-box">
+                <div class="row project-row">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <img class="project-image" src=<%= image %>>
+                    </div>
+                    <div class=" project-content col-lg-6 col-md-12 col-sm-12">
+                        <h1 class="project-name"><%= name %></h1>
+                        <p class="project-description"><%= description %></p>
+                    </div>
+                </div>
+                
+                <div class="row project-row">
+                    <div class="project-footer col-lg-12 col-md-12 col-sm-12">
+                        <div class="project-technology">
+                            <div class="row project-row">
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <ul>
+                                        <% for (var i=0;i<parseInt(technology.length/2);i++ ){ %>
+                                            <li><%= technology[i] %></li>
+                                        <% } %>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <ul>
+                                        <% for (var i=parseInt(technology.length/2);i<technology.length;i++ ){ %>
+                                            <li><%= technology[i] %></li>
+                                        <% } %>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-git-icon">
+                            <a href=<%= github %> target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
 
-<%- include("partials/footer") -%>
+    <%- include("partials/footer") -%>
